@@ -1,0 +1,13 @@
+footer{display:none;position: fixed;bottom: 10px;height: 50px;width:100%}
+
+/* for screen tablet */
+@media screen and (max-width:830px){}
+
+/* for screen mobile */
+@media screen and (max-width:430px){
+    footer{display: flex;align-items: center;justify-content: center;gap: 20px;z-index: 11;position: sticky;}
+    footer button:not(#home){width: 45px;height: 45px;border-radius: 50%;color:#ff62d8;background-color: #555096;}
+    footer button #home:hover{background: linear-gradient(to bottom,red,blue);}
+    footer #home{width: 50px;height: 50px;border-radius: 50%;background-color: #1abe48;color: #ff62d8;}
+    .text-large, .text-medium, .text-small {text-shadow: 0 0 5px #fff,0 0 10px #fff;}
+}
